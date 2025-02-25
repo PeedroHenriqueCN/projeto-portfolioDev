@@ -1,0 +1,74 @@
+header{
+  background-image: url(/assets/images/Background_Intro.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container{
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  
+  #imgAvatar{
+    margin-top: 120px;
+    width: 96px;
+    object-fit: cover;
+    border:1px solid var(--red);
+    border-radius: 100%;
+    padding: 5px;
+  };
+
+
+  h2{
+    margin-top: 56px;
+    font: var(--text-md);
+    color: var(--gray-500);
+    span{
+      color: var(--red);
+    }
+  }
+
+  h1{
+    margin-top: 8px;
+    font: var(--title-lg);
+    color: var(--gray-600);
+  }
+  
+  p{
+    margin-top: 20px;
+    font: var(--text-sm);
+    color: var(--gray-400);
+  }
+
+  nav ul{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    list-style: none;
+    
+    
+    li{
+      color: var(--gray-500);
+      font: var(--text-md);
+      padding: 8px 16px;
+      border-radius: 20px;
+      display: flex;
+      gap: 8px;
+      
+      background-color: var(--gray-300);
+    }
+  }
+  
+  #setaHeader{
+    width: 23px;
+    margin-top: 94px;
+    margin-bottom: 60px;
+  }
+
+}
