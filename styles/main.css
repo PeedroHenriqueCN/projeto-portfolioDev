@@ -1,8 +1,11 @@
 main{
   padding-top: 72px;
+  padding-bottom: 144px;
   background-color: var(--gray-200);
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
 
   p{
     color: var(--red);
@@ -15,4 +18,52 @@ main{
     font: var(--title-md);
     margin-bottom: 56px;
   }
+
+  section{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    
+
+    .card{
+      width: 330px;
+      background-color: var(--gray-300);
+      border-radius: 12px;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img{
+        width: 306px;
+        height: 156px;
+        border-radius: 8px;
+        margin: 12px 12px 24px 12px;
+      }
+
+      span{
+        font: var(--title-sm);
+        color: var(--gray-600);
+        align-self: flex-start;
+        margin-inline: 12px;
+        margin-bottom: 8px;
+      }
+
+      p{
+        font: var(--text-sm);
+        color: var(--gray-500);
+        margin-inline: 12px;
+        margin-bottom: 17px;
+      }
+
+      &:hover{
+        
+        outline: 1.5px solid var(--gray-400);
+        transition-duration: 0.3s;
+      }
+    }
+  }
 }
+
+
+
